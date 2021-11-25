@@ -17,7 +17,7 @@ export const TodoAdd = ({ dispatch }) => {
 			<h2>Add Todo</h2>
 
 			<form onSubmit={(e) => handleSubmit(e, description, dispatch, reset)}>
-				<input type='text' name='description' placeholder='Add Description' autoComplete='off' value={description} onChange={handleInputChange} />
+				<input type='text' name='description' placeholder='Add Description' minLength='5' autoComplete='off' value={description} onChange={handleInputChange} />
 				<button type='submit'>Add</button>
 			</form>
 		</div>
