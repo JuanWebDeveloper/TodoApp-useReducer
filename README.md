@@ -5,5 +5,5 @@
 # App Preview Mobile Resolution
 
 <p align="center">
-    <img width="90%" src="https://github.com/JuanWebDeveloper/TodoApp-useReducer/blob/master/src/images/appPreviewMobile.jpeg">
+    <img width="700" height="300"  src="https://github.com/JuanWebDeveloper/TodoApp-useReducer/blob/master/src/images/appPreviewMobile.jpeg">
 </p>
