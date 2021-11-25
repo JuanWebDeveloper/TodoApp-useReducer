@@ -1,0 +1,72 @@
+/* Styles TodoList Component */
+.todo-list_container {
+	position: relative;
+	width: 50%;
+}
+
+.todo-list_container ul {
+	border-radius: 5px;
+	list-style: none;
+	margin-top: 25px;
+	padding: 0;
+}
+
+.todo-list_container ul li {
+	align-items: center;
+	background: var(--bg-color-secondary);
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	position: relative;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.todo-list_container ul li p span {
+	color: var(--text-color);
+	font-weight: 500;
+	text-shadow: 0 0 10px var(--text-color), 0 0 10px var(--text-color);
+	margin-right: 5px;
+}
+
+.todo-list_container ul .action-buttons h5 {
+	color: var(--text-color);
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-top: 10px;
+	text-align: center;
+	text-shadow: 0 0 10px var(--text-color), 0 0 10px var(--text-color);
+}
+
+.todo-list_container ul .action-buttons button i {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.todo-list_container ul .action-buttons button {
+	background: none;
+	cursor: pointer;
+	margin: 10px;
+	margin-bottom: 15px;
+	transition: all 0.3s ease-in;
+}
+
+.todo-list_container ul .action-buttons button.edit {
+	color: #008bfd;
+}
+
+.todo-list_container ul .action-buttons button.edit:hover {
+	text-shadow: 0 0 10px #008bfd80, 0 0 10px #008bfd80;
+}
+
+.todo-list_container ul .action-buttons button.delete {
+	color: #ff1f1f;
+}
+
+.todo-list_container ul .action-buttons button.delete:hover {
+	text-shadow: 0 0 10px #ff1f1f80, 0 0 10px #ff1f1f80;
+}
