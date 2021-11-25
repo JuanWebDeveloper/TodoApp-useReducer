@@ -4,4 +4,6 @@
 
 # App Preview Mobile Resolution
 
-![Preview Web App.](https://github.com/JuanWebDeveloper/TodoApp-useReducer/blob/master/src/images/appPreviewMobile.jpeg)
+<p align="center">
+    <img width="90%" src="https://github.com/JuanWebDeveloper/TodoApp-useReducer/blob/master/src/images/appPreviewMobile.jpeg">
+</p>
