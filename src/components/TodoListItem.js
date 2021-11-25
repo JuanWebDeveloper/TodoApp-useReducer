@@ -1,15 +1,18 @@
 import React from 'react';
 
-export const TodoListItem = ({ todo, index }) => {
+// Helpers
+import { handleComplete } from '../helpers/handleComplete';
+
+export const TodoListItem = ({ todo, index, dispatch }) => {
 	return (
 		<li>
-			<p>
+			<p className={`${todo.done && 'complete'} `}>
 				<span>{index + 1}.</span> {todo.description}
 			</p>
 			<div className='action-buttons'>
 				<h5>Actions</h5>
-				<button className='edit'>
-					<i class='fas fa-edit'></i>
+				<button className='complete' onClick={() => handleComplete(todo.id, dispatch)}>
+					<i class='far fa-check-square'></i>
 				</button>
 
 				<button className='delete'>

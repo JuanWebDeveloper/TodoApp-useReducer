@@ -35,6 +35,15 @@
 	margin-right: 5px;
 }
 
+.todo-list_container ul li p.complete {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.todo-list_container ul li p.complete span {
+	text-shadow: none;
+}
+
 .todo-list_container ul .action-buttons h5 {
 	color: var(--text-color);
 	font-size: 15px;
@@ -59,12 +68,12 @@
 	transition: all 0.3s ease-in;
 }
 
-.todo-list_container ul .action-buttons button.edit {
-	color: #008bfd;
+.todo-list_container ul .action-buttons button.complete {
+	color: #14eb00;
 }
 
-.todo-list_container ul .action-buttons button.edit:hover {
-	text-shadow: 0 0 10px #008bfd80, 0 0 10px #008bfd80;
+.todo-list_container ul .action-buttons button.complete:hover {
+	text-shadow: 0 0 10px #14eb0080, 0 0 10px #14eb0080;
 }
 
 .todo-list_container ul .action-buttons button.delete {

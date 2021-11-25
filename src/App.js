@@ -19,7 +19,7 @@ const App = () => {
 	return (
 		<div className='main-container'>
 			<TodoAdd dispatch={dispatch} />
-			<TodoList todos={todos} />
+			<TodoList todos={todos} dispatch={dispatch} />
 		</div>
 	);
 };
