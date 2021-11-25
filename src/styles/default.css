@@ -1,0 +1,49 @@
+/* Variables For Dark Theme Styles */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #00001a;
+		--bg-color-secondary: #13142a;
+		--text-color-title: #32314e;
+		--text-color: #dedede;
+	}
+}
+
+/* Variables For Light Theme Styles */
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-color: #dedede;
+		--bg-color-secondary: #4e4e4e;
+		--text-color-title: #0006b3;
+		--text-color: #222222;
+	}
+}
+
+/* Default Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	height: 90vh;
+	justify-content: space-between;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 90vw;
+}
