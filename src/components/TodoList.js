@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Component
 import { TodoListItem } from './TodoListItem';
 
 import '../styles/todoList.css';
