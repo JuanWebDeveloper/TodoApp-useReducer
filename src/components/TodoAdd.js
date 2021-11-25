@@ -1,14 +1,22 @@
 import React from 'react';
 
+import { useForm } from '../hooks/useForm';
+
+import { handleSubmit } from '../helpers/handleSubmit';
+
 import '../styles/todoAdd.css';
 
 export const TodoAdd = () => {
+	const { formValues, handleInputChange, reset } = useForm({ description: '' });
+
+	const { description } = formValues;
+
 	return (
 		<div className='form-container'>
 			<h2>Add Todo</h2>
 
-			<form>
-				<input type='text' name='description' placeholder='Add Description' autoComplete='off' />
+			<form onSubmit={(e) => handleSubmit(e, formValues, reset)}>
+				<input type='text' name='description' placeholder='Add Description' autoComplete='off' value={description} onChange={handleInputChange} />
 				<button type='submit'>Add</button>
 			</form>
 		</div>
