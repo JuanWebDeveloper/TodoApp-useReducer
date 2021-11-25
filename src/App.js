@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { TodoAdd } from './components/TodoAdd';
+import { TodoList } from './components/TodoList';
+
 const App = () => {
 	return (
-		<div>
-			<h1>Hola Mundo</h1>
+		<div className='main-container'>
+			<TodoAdd />
+			<TodoList />
 		</div>
 	);
 };
