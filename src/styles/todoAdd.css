@@ -49,3 +49,10 @@
 	letter-spacing: 1px;
 	padding: 0 15px;
 }
+
+@media screen and (max-width: 980px) {
+	.form-container {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
