@@ -1,28 +1,18 @@
 import React from 'react';
 
+import { TodoListItem } from './TodoListItem';
+
 import '../styles/todoList.css';
 
-export const TodoList = () => {
+export const TodoList = ({ todos }) => {
 	return (
 		<div className='todo-list_container'>
 			<h2>Todo List</h2>
 
 			<ul>
-				<li>
-					<p>
-						<span>1.</span> Example
-					</p>
-					<div className='action-buttons'>
-						<h5>Actions</h5>
-						<button className='edit'>
-							<i class='fas fa-edit'></i>
-						</button>
-
-						<button className='delete'>
-							<i class='fas fa-trash-alt'></i>
-						</button>
-					</div>
-				</li>
+				{todos.map((todo, i) => (
+					<TodoListItem key={todo.id} todo={todo} index={i} />
+				))}
 			</ul>
 		</div>
 	);

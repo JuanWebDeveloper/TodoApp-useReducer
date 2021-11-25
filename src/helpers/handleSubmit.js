@@ -1,6 +1,21 @@
-export const handleSubmit = (e, values, reset) => {
+export const handleSubmit = (e, description, dispatch, reset) => {
 	e.preventDefault();
 
-	console.log(values);
+	if (description.trim().length <= 5) {
+		return;
+	}
+
+	const newTodo = {
+		id: new Date().getTime(),
+		description,
+		done: false,
+	};
+
+	const action = {
+		type: 'add',
+		payload: newTodo,
+	};
+
+	dispatch(action);
 	reset();
 };

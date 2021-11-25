@@ -9,10 +9,11 @@ import './styles/default.css';
 
 const App = () => {
 	const [todos, dispatch] = useReducer(useTodoReducer, []);
+
 	return (
 		<div className='main-container'>
-			<TodoAdd />
-			<TodoList />
+			<TodoAdd dispatch={dispatch} />
+			<TodoList todos={todos} />
 		</div>
 	);
 };
